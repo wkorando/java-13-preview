@@ -1,0 +1,12 @@
+FROM maven:3.6-jdk-13 as BUILD
+ 
+COPY src /usr/src/app/src
+COPY pom.xml /usr/src/app
+WORKDIR /usr/src/app
+RUN mvn package
+
+FROM openjdk:13-ea-jdk
+
+COPY --from=BUILD /usr/src/app/target/java-13-preview.jar /
+
+CMD ["sh", "-c", "java --enable-preview -jar java-13-preview.jar ${SEASON}" ]
