@@ -2,9 +2,9 @@
 
 This projecti s a very brief demonstration of using the new [Text Block](https://openjdk.java.net/jeps/355) feature and the updates to [Switch Expression](https://openjdk.java.net/jeps/354). 
 
-##Running the Demo
+## Running the Demo
 
-###Without Java 13 
+### Without Java 13 
 
 It is not required to have Java 13 installed to run this demo. To run the demo without Java 13 installed on your system, build the Docker image by running the following command: 
 
@@ -27,7 +27,7 @@ The output should look something like this:
 }
 ```
 
-###With Java 13
+### With Java 13
 
 If you do have Java 13 installed, from the root of the project run:
 
